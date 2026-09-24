@@ -12,8 +12,14 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #eeeeee;
     color: #222;
+
+    /* Imagem de fundo gamer */
+    background-image: url('173167.jpg');
+    background-size: cover;        /* Faz a imagem cobrir a tela toda */
+    background-position: center;   /* Centraliza a imagem */
+    background-repeat: no-repeat;  /* Não deixa a imagem se repetir */
+    background-attachment: fixed;  /* Mantém o fundo fixo ao rolar a página */
 }
 
 
@@ -30,7 +36,7 @@ body {
 .navegacao {
     max-width: 1450px;
     margin: auto;
-    padding: 18px 20px;
+    padding: 15px 20px;
 
     display: flex;
     align-items: center;
@@ -38,12 +44,20 @@ body {
 }
 
 .logo {
-    font-size: 25px;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-.logo span {
-    color: #00c8ff;
+.logo-img {
+    height: 45px; /* Altura da imagem da logo */
+    width: auto;  /* Mantém a proporção correta */
+}
+
+.logo-texto {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
 }
 
 
@@ -466,10 +480,6 @@ body {
 
     .navegacao {
         padding: 15px;
-    }
-
-    .logo {
-        font-size: 21px;
     }
 
 
